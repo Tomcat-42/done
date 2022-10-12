@@ -4,6 +4,8 @@ add_rules("mode.debug", "mode.release")
 set_warnings("all", "error")
 -- set_optimize("fastest")
 
+add_defines("V8_COMPRESS_POINTERS") -- for v8 pointer compression
+
 -- add libraries
 local external_libs = {"fmt", "cxxopts", "libuv", "v8"}
 add_requires(table.unpack(external_libs))
@@ -13,11 +15,34 @@ target("libdone")
 set_kind("static")
 add_files("src/**/*.cpp")
 add_packages(table.unpack(external_libs))
-add_defines("V8_COMPRESS_POINTERS") -- for v8 pointer compression
 
 target("done")
 set_kind("binary")
 add_files("src/main.cpp")
+add_packages(table.unpack(external_libs))
+add_deps("libdone")
+
+target("threads")
+set_kind("binary")
+add_files("standalone/threads.cpp")
+add_packages(table.unpack(external_libs))
+add_deps("libdone")
+
+target("uv_threads")
+set_kind("binary")
+add_files("standalone/uv_threads.cpp")
+add_packages(table.unpack(external_libs))
+add_deps("libdone")
+
+target("uv_timers")
+set_kind("binary")
+add_files("standalone/uv_timers.cpp")
+add_packages(table.unpack(external_libs))
+add_deps("libdone")
+
+target("v8_hello")
+set_kind("binary")
+add_files("standalone/v8_hello.cpp")
 add_packages(table.unpack(external_libs))
 add_deps("libdone")
 
