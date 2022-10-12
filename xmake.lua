@@ -13,6 +13,7 @@ target("libdone")
 set_kind("static")
 add_files("src/**/*.cpp")
 add_packages(table.unpack(external_libs))
+add_defines("V8_COMPRESS_POINTERS") -- for v8 pointer compression
 
 target("done")
 set_kind("binary")

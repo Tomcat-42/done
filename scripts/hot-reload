@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+command_exists() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "I require the command $1 but it's not installed. Abort."
+        exit 1
+    fi
+}
+
+# depts
+for i in "qemu-img" "qemu-system-x86_64"; do
+    command_exists "$i"
+done
+
+nodemon -e cc,h,js,cpp,hpp --exec "xmake build && xmake run -w . -- done index.js"

@@ -1,0 +1,21 @@
+[
+{
+  "directory": "/mnt/files/projects/Outros/cpp/done",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++23", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/1eea793b9f4b4ec0827a4c67495d00a5/include", "-I", "/home/pablo/.xmake/packages/l/libuv/v1.44.1/218aeb9183b64161916f561e57f93fd6/include", "-I", "/home/pablo/.xmake/packages/v/v8/10.0.58/7d20815e089c470c88a0dbba1a45f5f8/include", "-DNDEBUG", "-o", "build/.objs/libdone/linux/x86_64/release/src/libdone/util.cpp.o", "src/libdone/util.cpp"],
+  "file": "src/libdone/util.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Outros/cpp/done",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++23", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/1eea793b9f4b4ec0827a4c67495d00a5/include", "-I", "/home/pablo/.xmake/packages/l/libuv/v1.44.1/218aeb9183b64161916f561e57f93fd6/include", "-I", "/home/pablo/.xmake/packages/v/v8/10.0.58/7d20815e089c470c88a0dbba1a45f5f8/include", "-DNDEBUG", "-o", "build/.objs/libdone/linux/x86_64/release/src/libdone/done.cpp.o", "src/libdone/done.cpp"],
+  "file": "src/libdone/done.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Outros/cpp/done",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++23", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/1eea793b9f4b4ec0827a4c67495d00a5/include", "-I", "/home/pablo/.xmake/packages/l/libuv/v1.44.1/218aeb9183b64161916f561e57f93fd6/include", "-I", "/home/pablo/.xmake/packages/v/v8/10.0.58/7d20815e089c470c88a0dbba1a45f5f8/include", "-DNDEBUG", "-o", "build/.objs/libdone/linux/x86_64/release/src/libdone/fs.cpp.o", "src/libdone/fs.cpp"],
+  "file": "src/libdone/fs.cpp"
+},
+{
+  "directory": "/mnt/files/projects/Outros/cpp/done",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Werror", "-O3", "-std=c++23", "-Iinclude", "-I/usr/local/include", "-I/usr/include", "-I", "/home/pablo/.xmake/packages/c/cxxopts/v3.0.0/1eea793b9f4b4ec0827a4c67495d00a5/include", "-I", "/home/pablo/.xmake/packages/l/libuv/v1.44.1/218aeb9183b64161916f561e57f93fd6/include", "-I", "/home/pablo/.xmake/packages/v/v8/10.0.58/7d20815e089c470c88a0dbba1a45f5f8/include", "-DNDEBUG", "-o", "build/.objs/done/linux/x86_64/release/src/main.cpp.o", "src/main.cpp"],
+  "file": "src/main.cpp"
+}]
